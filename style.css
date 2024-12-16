@@ -1,0 +1,87 @@
+:root {
+  --background: #f4f4f4;
+  --text-color: #333;
+  --header-bg: #d32f2f;
+  --button-bg: #ff7043;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --text-color: #e0e0e0;
+  --header-bg: #1b1b1b;
+  --button-bg: #444;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--header-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+header nav button, a {
+  background: var(--button-bg);
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-section input {
+  width: 60%;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shortcuts .shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.shortcuts a {
+  display: block;
+  background: var(--button-bg);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
